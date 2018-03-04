@@ -1,9 +1,13 @@
-<div align="center">
+<div class="container">
+  <div class="row" id="first-row">
+    <div align="center" class="col-md-12">
 <img src="assets/images/burger.jpg" alt="Burger" id="burger">
 <h1>Eat-Da-Burger</h1>
-</div>
-<div id="not_devoured">
-<h2>Burgers that are not devoured</h2>
+    </div>
+  </div>
+<div class="row" id="second-row">
+  <div class="col-md-6">
+<h2>Burgers Not Devoured</h2>
 <ol>
   {{#each burgers}}
     {{#unless devoured}}
@@ -18,7 +22,8 @@
   {{/each}}
 </ol>
 </div>
-<h2>Burgers that are devoured</h2>
+  <div class="col-md-6">
+<h2>Burgers Devoured</h2>
 <ol>
   {{#each burgers}}
     {{#if devoured}}
@@ -32,16 +37,21 @@
     {{/if}}
   {{/each}}
 </ol>
+</div>
+</div>
+<div class="row" id="third-row">
+  <div align="center" class="col-md-12">
 <form class="create-form">
-  <div align="center" class="form-group">
+  <div class="form-group">
     <input type="text" id="burg" name="burger_name">
   </div>
-  <div align="center" class="form-group">
+  {{!-- <div class="form-group"> --}}
     {{!-- <input type="radio" name="devoured" value="1" checked> Devoured<br> --}}
-    <input type="radio" name="devoured" value="0"> Not Devoured
-  </div>
-  <div align="center">
+    {{!-- <input type="radio" name="devoured" value="0"> Not Devoured --}}
+  {{!-- </div> --}}
   <button type="submit">Submit</button>
   <p>Enter the name of a burger that you want to devour, and click the Submit button.</p>
-  </div>
 </form>
+</div>
+</div>
+</div>
