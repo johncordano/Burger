@@ -8,7 +8,9 @@
   </div>
   {{!-- Use the burger-block.handlebars file to display the list of not devoured burgers, the list of devoured burgers, and the Devour It button for each not devoured burger. --}}
   <div class="row" id="second-row">
-    <div class="col-md-6">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
       <h3>Burgers Not Devoured</h3>
     <ol>
       {{#each burgers}}
@@ -18,7 +20,7 @@
       {{/each}}
     </ol>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <h3>Burgers Devoured</h3>
     <ol>
       {{#each burgers}}
@@ -27,6 +29,8 @@
         {{/if}}
       {{/each}}
     </ol>
+    </div>
+    <div class="col-md-2">
     </div>
   </div>
   {{!-- Display the form with a Submit button and a field to enter a burger name.  --}}
@@ -38,7 +42,7 @@
           <input type="text" id="burg" name="burger_name">
         </div>
       <br><br>
-          <button type="submit">Submit</button>
+          <button class="btn btn-warning" type="submit">Submit</button>
       <br><br>
           <p>Enter the name of a burger that you want to devour, and click the Submit button.</p>
       </form>
