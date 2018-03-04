@@ -20,7 +20,6 @@ router.post("/api/burgers", function(req, res) {
   ], function(result) {
     // Send back the ID of the new burger.
     res.json({ id: result.insertId });
-    console.log("Does it make it this far?")
   });
 });
 router.put("/api/burgers/:id", function(req, res) {

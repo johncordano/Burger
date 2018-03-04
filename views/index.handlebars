@@ -12,12 +12,6 @@
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
-{{!--       <li>
-        {{burger_name}}
-        <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-        {{#if devour}}Devour it!{{else}}Unneeded button{{/if}}
-        </button>
-      </li> --}}
     {{/unless}}
   {{/each}}
 </ol>
@@ -28,12 +22,6 @@
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devour=false}}
-{{!--       <li>
-        {{burger_name}}
-        <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-        {{#if devour}}Devour it!{{else}}Unneeded button{{/if}}
-        </button>
-      </li> --}}
     {{/if}}
   {{/each}}
 </ol>
@@ -42,14 +30,13 @@
 <div class="row" id="third-row">
   <div align="center" class="col-md-12">
 <form class="create-form">
+  <br><br>
   <div class="form-group">
     <input type="text" id="burg" name="burger_name">
   </div>
-  {{!-- <div class="form-group"> --}}
-    {{!-- <input type="radio" name="devoured" value="1" checked> Devoured<br> --}}
-    {{!-- <input type="radio" name="devoured" value="0"> Not Devoured --}}
-  {{!-- </div> --}}
+  <br><br>
   <button type="submit">Submit</button>
+  <br><br>
   <p>Enter the name of a burger that you want to devour, and click the Submit button.</p>
 </form>
 </div>
