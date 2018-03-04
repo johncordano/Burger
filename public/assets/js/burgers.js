@@ -1,4 +1,4 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
+// Make sure to wait until the DOM is fully loaded to attach the handlers.
 $(function() {
   $(".change-devour").on("click", function(event) {
     var id = $(this).data("id");
@@ -13,7 +13,7 @@ $(function() {
     }).then(
       function() {
         console.log("changed devoured to", newDevour);
-        // Reload the page to get the updated list
+        // Reload the page to get the updated list.
         location.reload();
       }
     );
@@ -32,7 +32,7 @@ $(function() {
     }).then(
       function() {
         console.log("created new burger");
-        // Reload the page to get the updated list
+        // Reload the page to get the updated list.
         location.reload();
       }
     );

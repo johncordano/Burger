@@ -10,7 +10,7 @@ function printQuestionMarks(num) {
   }
   return arr.toString();
 }
-// Helper function to convert object key/value pairs to SQL syntax.
+// Use helper function to convert object key/value pairs to SQL syntax.
 function objToSql(ob) {
   var arr = [];
   // Loop through the keys and push the key/value as a string int arr.
@@ -30,7 +30,7 @@ function objToSql(ob) {
   // Translate the array of strings to a single comma-separated string.
   return arr.toString();
 }
-// Object for all the SQL statement functions.
+// Create the object for all the SQL statement functions.
 var orm = {
   selectAll: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
