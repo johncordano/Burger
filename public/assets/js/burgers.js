@@ -1,5 +1,6 @@
-// Make sure to wait until the DOM is fully loaded to attach the handlers.
+// Wait until the DOM is fully loaded to attach the handlers.
 $(function() {
+  // Run a function when the user clicks the Devour It! button.
   $(".change-devour").on("click", function(event) {
     var id = $(this).data("id");
     var newDevour = $(this).data("newdevour");
@@ -18,8 +19,9 @@ $(function() {
       }
     );
   });
+  // Run a function when the user clicks the Submit button.
   $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
+    // PreventDefault on a submit event.
     event.preventDefault();
     var newBurger = {
       burger_name: $("#burg").val().trim(),

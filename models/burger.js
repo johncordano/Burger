@@ -1,4 +1,4 @@
-// Import the ORM to create functions that will interact with the database.
+// Import the ORM to create functions that interact with the database.
 var orm = require("../config/orm.js");
 var burger = {
   selectAll: function(cb) {
@@ -6,7 +6,7 @@ var burger = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
+  // The cols and vals variables are arrays.
   insertOne: function(cols, vals, cb) {
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
