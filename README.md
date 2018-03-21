@@ -2,6 +2,8 @@
 
 In this project, the user enters the name of a burger in a text field, and then clicks the Submit button to display the burger name in the Burgers Not Devoured list on the left side of the screen. The user can then click the Devour It! button next to a burger in this list to move the burger name from the left side of the screen to the Burgers Devoured list on the right side of the screen.
 
+The application is deployed at: https://burgercordano.herokuapp.com/
+
 # Sample Screenshots
 
 The following image shows that "western burger" is entered in the text field.  
